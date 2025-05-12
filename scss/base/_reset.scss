@@ -29,7 +29,8 @@ body {
   background-color: $color-danger;
   color: $color-white;
   @include respond(sm) {
-    padding: 10rem 2.4rem 8rem 2.4rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
   }
 }
 main {

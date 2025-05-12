@@ -2,6 +2,8 @@
   @include flex($gap: 4.5rem, $align: center);
   @include respond(sm) {
     @include flex($direction: column);
+    padding-top: 10rem;
+    padding-bottom: 5rem;
   }
   &__content {
     width: 100%;
