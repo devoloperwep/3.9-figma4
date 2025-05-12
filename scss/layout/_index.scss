@@ -1,0 +1,93 @@
+.contact {
+  @include flex($gap: 4.5rem, $align: center);
+  @include respond(sm) {
+    @include flex($direction: column);
+  }
+  &__content {
+    width: 100%;
+    max-width: 525px;
+    @include respond(sm) {
+      text-align: center;
+      margin-bottom: 6.4rem;
+    }
+  }
+  &__title {
+    font-size: 5rem;
+    line-height: 1.1;
+    margin-bottom: 1.1rem;
+    @include respond(sm) {
+      font-size: 2.8rem;
+      line-height: 1.285;
+      margin-bottom: 1.6rem;
+    }
+  }
+  &__description {
+    font-size: 1.6rem;
+    line-height: 1.625;
+    font-weight: 500;
+  }
+  &__form {
+    @include flex($direction: column);
+  }
+  &__btn {
+    text-align: center;
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
+    color: $color-white;
+    background-color: $color-secondary;
+    border-radius: 1rem;
+    margin-bottom: 2.4rem;
+    transition: 0.3;
+    letter-spacing: 0.27px;
+    line-height: 1.73;
+    @include respond(sm) {
+      padding-left: 6.6rem;
+      padding-right: 6.6rem;
+    }
+    &:active {
+      opacity: 0.8;
+    }
+  }
+  .form__content {
+    width: 100%;
+    max-width: 540px;
+    padding: 4rem;
+    background-color: $color-white;
+    border-radius: 1rem;
+    text-align: center;
+  }
+  .form__input {
+    width: 100%;
+    padding: 1.5rem 0 1.5rem 3.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #dedede;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    outline: none;
+    &:focus {
+      border: 1px solid $color-secondary;
+    }
+  }
+  .form__btn {
+    background-color: $color-info;
+    width: 100%;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    color: $color-white;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: 0.3s;
+    margin-bottom: 0.8rem;
+    &:hover {
+      background-color: #77e2b3;
+    }
+  }
+  .form__small {
+    font-size: 1.1rem;
+    color: #bab7d4;
+  }
+}
